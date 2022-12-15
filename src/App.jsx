@@ -16,15 +16,15 @@ export default function App() {
   }
 
   return (
-    <article className="advice-card">
+    <main className="advice-card">
       <div className="advice-container">
         <p className="advice-id">{`ADVICE #${advice.id}`}</p>
         <p className="advice">{`"${advice.advice}"`}</p>
-        <img className="divider" src={Divider} />
+        <img className="divider" src={Divider} alt="divider" />
         <span className="dice-container">
-          <img className="dice" src={Dice} onClick={getAdvice} />
+          <img className="dice" src={Dice} onClick={getAdvice} alt="dice" />
         </span>
       </div>
-    </article>
+    </main>
   );
 }
